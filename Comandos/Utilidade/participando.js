@@ -16,7 +16,7 @@ module.exports = {
   run: async (client, interaction) => {
     let vcor = "#43b581"; // "Random";
     let ct = 0; // Contador
-    let it = 2; // Intervalo
+    let it = 5; // Intervalo
     let canal = client.channels.cache.get("875900801506242612"); // Nome do canal: canal.name;
     let cargo_id = "1091501054329356328"; // Jogando // Coloque o ID do cargo aqui
     //let obj = canal.guild.members.cache.filter(member => member.voice.channel); // Lista pessoas online em canais de voz.
@@ -31,7 +31,7 @@ module.exports = {
     interaction.reply({ embeds: [embed1] }).then( () => {
       //setTimeout( () => {}, (it * 1000));
       //setInterval( () => {}, (it * 1000));
-      setTimeout( () => {
+      setInterval( () => {
         ct++;
 
         //--- Lista de membros logados ---//
